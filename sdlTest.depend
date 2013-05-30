@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1369879621 source:/home/stewart/Eclipse/firstSDL_OpenGL/lesson36.cpp
+	"SDL/SDL.h"
+	"SDL/SDL_opengl.h"
+	<chrono>
+	<iostream>
+	"Rect.h"
+	"../../sdlTest/StopWatch.h"
+
+1369879578 /home/stewart/Eclipse/firstSDL_OpenGL/Rect.h
+	"SDL/SDL.h"
+	"SDL/SDL_opengl.h"
+
+1369879237 /home/stewart/sdlTest/StopWatch.h
+	<chrono>
+
