@@ -8,7 +8,7 @@ class StopWatch
 {
 public:
     StopWatch();
-    void tick(); // tick at the end of main game loop
+    void tick();
     float getTimeElapsed() const;
 
 private:
@@ -27,7 +27,7 @@ void StopWatch::tick()
     newTime = high_resolution_clock::now();
 }
 
-// Returns time elapsed in seconds as a float
+// Returns time elapsed in seconds
 float StopWatch::getTimeElapsed() const
 {
     return (duration_cast<duration<float>>(newTime - oldTime)).count();
