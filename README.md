@@ -4,7 +4,7 @@ Usage
 StopWatch s;
 /* Timed stuff here */
 s.tick();
-/* Other stuff
+/* Other stuff */
 float dt = s.getTimeElapsed();
 ```
 or
