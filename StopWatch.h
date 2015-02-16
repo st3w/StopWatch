@@ -8,7 +8,7 @@ class StopWatch
 public:
     StopWatch();
     void tick();
-    float getTimeElapsed() const;
+    template <class T> T getTimeElapsed() const;
 
 private:
     std::chrono::high_resolution_clock::time_point newTime, oldTime;
@@ -27,11 +27,12 @@ void StopWatch::tick()
 }
 
 // Returns time elapsed in seconds
-float StopWatch::getTimeElapsed() const
+template <class T>
+T StopWatch::getTimeElapsed() const
 {
     using std::chrono::duration_cast;
     using std::chrono::duration;
-    return (duration_cast<duration<float>>(newTime - oldTime)).count();
+    return (duration_cast<duration<T>>(newTime - oldTime)).count();
 }
 
 #endif // STOP_H
